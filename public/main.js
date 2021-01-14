@@ -51,6 +51,8 @@ console.log(splitStr)
 let words = new Map()
 // let word = ''
 let wordNum = 0
+// let count = 0
+
 
 // console.log(words)
 
@@ -65,16 +67,23 @@ let wordNum = 0
 // }
 
 splitStr.forEach((word, i) => {
-  console.log(`word: "${word}", index: ${i}`)
+  // console.log(`word: "${word}", index: ${i}`)
+  // console.log(`${word}`)
+  words.set(word, i)
+  console.log(words)
+  if (`${word}` === splitStr[i]) {
+    // console.log('TESTING')
+  }
 
 
-  if (word === splitStr[i]) {
-    count += 1
-    console.log('success')
-  }
-    else {
-      console.log('not yet')
-  }
+  // if (word === splitStr[i]) {
+  //   let count = 0
+  //   count += 1
+  //   console.log('success')
+  // }
+  //   else {
+  //     console.log('not yet')
+  // }
 
 })
 
