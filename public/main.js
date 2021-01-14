@@ -69,11 +69,33 @@ let wordNum = 0
 splitStr.forEach((word, i) => {
   // console.log(`word: "${word}", index: ${i}`)
   // console.log(`${word}`)
+  // console.log(splitStr[i])
   words.set(word, i)
-  console.log(words)
-  if (`${word}` === splitStr[i]) {
-    // console.log('TESTING')
+  // console.log(words)
+  // if (`${word}` === splitStr[i]) {
+  //   console.log('TESTING')
+  // }
+
+  if (word === splitStr[i]) {
+    let count = i
+    // count += 1
+    // console.log('true')
+    console.log(count)
+  } else {
+    console.log('false')
   }
+
+  // words.forEach((key, val) => {
+  //   if (words.has(splitStr[i])) {
+  //     let count = 0
+  //     count += 1
+  //     // console.log(key)
+  //     val = count
+  //     // console.log(val)
+  //   } else {
+  //     val = 1
+  //   }
+  // })
 
 
   // if (word === splitStr[i]) {
@@ -114,8 +136,9 @@ splitStr.forEach((word, i) => {
     // word: '',
     // duplicate: 0
 // }
-
-
+// let repeatedWords = {}
+//
+//
 // for (let i = 0; i < splitStr.length; i++) {
 //     // let prevIndex = i - 1
 //     // console.log(splitStr[i])
