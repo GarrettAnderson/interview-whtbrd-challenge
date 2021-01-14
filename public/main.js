@@ -64,11 +64,17 @@ let wordNum = 0
 
 // }
 
-splitStr.forEach((value, i) => {
-  console.log(`word: "${value}", index: ${i}`)
+splitStr.forEach((word, i) => {
+  console.log(`word: "${word}", index: ${i}`)
 
 
-
+  if (word === splitStr[i]) {
+    count += 1
+    console.log('success')
+  }
+    else {
+      console.log('not yet')
+  }
 
 })
 
