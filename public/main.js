@@ -65,7 +65,11 @@ let wordNum = 0
 // }
 
 splitStr.forEach((value, i) => {
-  console.log(value, i)
+  console.log(`word: "${value}", index: ${i}`)
+
+
+
+
 })
 
 
