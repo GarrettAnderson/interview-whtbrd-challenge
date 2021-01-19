@@ -70,20 +70,36 @@ splitStr.forEach((word, i) => {
   // console.log(`word: "${word}", index: ${i}`)
   // console.log(`${word}`)
   // console.log(splitStr[i])
+  // word = word
   words.set(word, i)
   // console.log(words)
   // if (`${word}` === splitStr[i]) {
   //   console.log('TESTING')
   // }
+  // })
 
-  if (word === splitStr[i]) {
-    let count = i
-    // count += 1
-    // console.log('true')
-    console.log(count)
-  } else {
-    console.log('false')
-  }
+  // words.forEach((wd, index) => {
+    // console.log(wd, word)
+
+    if ( words.has(splitStr[i])) {
+      console.log('yes')
+      let count = word[splitStr[i]]
+      console.log(count)
+    } else {
+      console.log('no')
+    }
+  // })
+
+})
+
+  // if (words.has(splitStr[i])) {
+  //   let count = word[splitStr[i]]
+  //   // console.log(count)
+  //   // count += 1
+  //   // console.log('true')
+  // } else {
+  //   console.log('false')
+  // }
 
   // words.forEach((key, val) => {
   //   if (words.has(splitStr[i])) {
@@ -107,7 +123,7 @@ splitStr.forEach((word, i) => {
   //     console.log('not yet')
   // }
 
-})
+// })
 
 
 
