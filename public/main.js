@@ -46,12 +46,12 @@ const INPUT = 'The quick brown fox jumped under the nearby tree. What the fox di
 // REFACTORED FROM INTERVIEW INCORPORATING THE NEW MAPS FUNCTIONALITY
 
 let splitStr = INPUT.split(" ")
-console.log(splitStr)
+// console.log(splitStr)
 
 let words = new Map()
 // let word = ''
 let wordNum = 0
-// let count = 0
+let count = 0
 
 
 // console.log(words)
@@ -67,12 +67,19 @@ let wordNum = 0
 // }
 
 splitStr.forEach((word, i) => {
-  // console.log(`word: "${word}", index: ${i}`)
+  console.log(`word: "${word}", index: ${i}`)
   // console.log(`${word}`)
   // console.log(splitStr[i])
   // word = word
-  words.set(word, i)
-  // console.log(words)
+
+  // for (let wd of splitStr) {
+    // words.set(word, i)
+    // console.log(words)
+    // console.log(wd)
+  // }
+
+
+
   // if (`${word}` === splitStr[i]) {
   //   console.log('TESTING')
   // }
@@ -81,18 +88,18 @@ splitStr.forEach((word, i) => {
   // words.forEach((wd, index) => {
     // console.log(wd, word)
 
-    if ( words.has(splitStr[i])) {
-      // console.log('yes')
-      let count = word[splitStr[i]]
-      console.log(count)
-    } else {
-      // console.log('no')
-    }
+    // if ( words.has(splitStr[i])) {
+    //   // console.log('yes')
+    //   let count = word[splitStr[i]]
+    //   console.log(count)
+    // } else {
+    //   // console.log('no')
+    // }
   // })
 
 })
 
-console.log(words)
+// console.log(words)
 
   // if (words.has(splitStr[i])) {
   //   let count = word[splitStr[i]]
