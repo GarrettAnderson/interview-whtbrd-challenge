@@ -82,15 +82,17 @@ splitStr.forEach((word, i) => {
     // console.log(wd, word)
 
     if ( words.has(splitStr[i])) {
-      console.log('yes')
+      // console.log('yes')
       let count = word[splitStr[i]]
       console.log(count)
     } else {
-      console.log('no')
+      // console.log('no')
     }
   // })
 
 })
+
+console.log(words)
 
   // if (words.has(splitStr[i])) {
   //   let count = word[splitStr[i]]
