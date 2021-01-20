@@ -73,19 +73,19 @@ for (let i = 0; i < splitStr.length; i++) {
 
   // console.log(words)
 
-  if (!words.has(splitStr[i])) {
-    // let count = words(splitStr[i])
-    let count
-    count += 1
-    words.set(splitStr[i], count)
-    
+  if (words.has(splitStr[i])) {
+    // words.set(splitStr[i], count +=1)
+    // console.log(words)
+    let count = words[splitStr[i]]
 
-    console.log('true')
+    // console.log('true')
 
   } else {
     // count = 1
-    console.log('testing')
+    // console.log('testing')
+    words[splitStr[i]] = 1
   }
+  console.log(words)
 
 
 }
