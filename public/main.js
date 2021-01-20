@@ -43,6 +43,9 @@ const INPUT = 'The quick brown fox jumped under the nearby tree. What the fox di
         // A: if repeat of word, store that word in a new variable
         // A: .length of the new variable
 
+        // A: Remove the decimals and all non alapha characters including spaces
+          // NO PERIODS included
+
 // REFACTORED FROM INTERVIEW INCORPORATING THE NEW MAPS FUNCTIONALITY
 
 let lowerCaseStr = INPUT.toLowerCase()
@@ -77,18 +80,20 @@ for (let i = 0; i < splitStr.length; i++) {
     // words.set(splitStr[i], count +=1)
     // console.log(words)
     let count = words[splitStr[i]]
+    count += 1
+    words[splitStr[i]] = count
 
-    // console.log('true')
+    console.log(count)
 
   } else {
     // count = 1
     // console.log('testing')
     words[splitStr[i]] = 1
   }
-  console.log(words)
-
-
+  // console.log(words)
 }
+console.log(words)
+
 // splitStr.forEach((wd, i) => {
   // console.log(`word: "${word}", index: ${i}`)
 // console.log(words)
