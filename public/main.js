@@ -48,7 +48,7 @@ const INPUT = 'The quick brown fox jumped under the nearby tree. What the fox di
 let lowerCaseStr = INPUT.toLowerCase()
 // console.log(lowerCaseStr)
 let splitStr = lowerCaseStr.split(" ")
-// console.log(splitStr)
+console.log(splitStr)
 
 let words = new Map()
 // let word = ''
@@ -68,18 +68,22 @@ let count = 0
 
 // }
 
-splitStr.forEach((word, i) => {
+// splitStr.forEach((wd, i) => {
   // console.log(`word: "${word}", index: ${i}`)
 
+for (let word of splitStr) {
+  console.log(word)
 
-  words.set(word, i)
-  console.log(words)
+  words.set(word)
+}
 
-})
+console.log(words)
 
-    for ( let [key, val] of words.entries()) {
-      console.log(key, val)
-    }
+// })
+
+    // for ( let [key, val] of words.entries()) {
+    //   // console.log(key, val)
+    // }
 
 
 
