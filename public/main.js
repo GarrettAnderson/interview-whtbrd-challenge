@@ -50,8 +50,10 @@ const INPUT = 'The quick brown fox jumped under the nearby tree. What the fox di
 
 let lowerCaseStr = INPUT.toLowerCase()
 // console.log(lowerCaseStr)
-let splitStr = lowerCaseStr.split(" ")
-console.log(splitStr)
+let strpdStr = lowerCaseStr.replace(/[^\w\s]/gi, '')
+let splitStr = strpdStr.split(" ")
+// console.log(splitStr)
+console.log(strpdStr)
 
 let words = new Map()
 // let word = ''
@@ -74,21 +76,24 @@ let wordNum = 0
 
 for (let i = 0; i < splitStr.length; i++) {
 
+  let count = 1
+  words.set(splitStr[i], count)
   // console.log(words)
 
-  if (words.has(splitStr[i])) {
-    // words.set(splitStr[i], count +=1)
-    // console.log(words)
-    let count = words[splitStr[i]]
+
+  if (!words.has(splitStr[i])) {
+  //   // words.set(splitStr[i], count +=1)
+  //   // console.log(words)
+    let count
     count += 1
     words[splitStr[i]] = count
-
-    console.log(count)
-
+  //
+    console.log('yes')
+  //
   } else {
-    // count = 1
-    // console.log('testing')
-    words[splitStr[i]] = 1
+  //   // count = 1
+    console.log('testing')
+  //   // words[splitStr[i]] = 1
   }
   // console.log(words)
 }
