@@ -53,7 +53,7 @@ console.log(splitStr)
 let words = new Map()
 // let word = ''
 let wordNum = 0
-let count = 0
+// let count = 0
 
 
 // console.log(words)
@@ -68,16 +68,26 @@ let count = 0
 
 // }
 
+
+for (let i = 0; i < splitStr.length; i++) {
+
+  // console.log(words)
+
+  if (words.has(splitStr[i])) {
+    // let count = words(splitStr[i])
+    // count += 1
+    console.log('true')
+
+  } else {
+    count = 1
+    console.log(count)
+  }
+
+
+}
 // splitStr.forEach((wd, i) => {
   // console.log(`word: "${word}", index: ${i}`)
-
-for (let word of splitStr) {
-  console.log(word)
-
-  words.set(word)
-}
-
-console.log(words)
+// console.log(words)
 
 // })
 
