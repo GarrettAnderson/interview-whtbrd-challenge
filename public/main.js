@@ -80,12 +80,13 @@ for (let i = 0; i < splitStr.length; i++) {
   // console.log(words)
   let count = 0
 
-  words.set([splitStr[i], count])
+  words.set(splitStr[i], count)
 
 
   if (words.has(splitStr[i])) {
   //   // console.log(words)
-    words.set(splitStr[i], count += 1)
+    count += 1
+    words.set(splitStr[i], count)
     console.log(words)
   } else {
     // count += 1
