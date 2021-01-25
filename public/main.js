@@ -85,13 +85,16 @@ for (let i = 0; i < splitStr.length; i++) {
         count += 1
         // let count = words.splitStr[i]
         // words.set(splitStr[i], count)
-        console.log(count)
-        console.log('if statemet thrown')
+        // console.log(count)
+        words.set(splitStr[i], count)
+
+        // console.log('if statemet thrown')
     } else {
       count = 1
-      console.log('else statemet thrown')
+      // console.log('else statemet thrown')
+      words.set(splitStr[i], count)
+
     }
-    words.set(splitStr[i], count)
 }
 console.log(words)
 
