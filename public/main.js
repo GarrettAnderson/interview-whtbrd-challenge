@@ -55,7 +55,8 @@ let splitStr = strpdStr.split(" ")
 // console.log(splitStr)
 console.log(strpdStr)
 
-let words = new Map()
+let repeatedWords = {}
+// let words = new Map()
 // let word = ''
 let wordNum = 0
 // let count = 0
@@ -73,32 +74,42 @@ let wordNum = 0
 
 // }
 
+// ===========================================
+    // START solution with ES6 Map
+// ===========================================
 
-for (let i = 0; i < splitStr.length; i++) {
+//
+// for (let i = 0; i < splitStr.length; i++) {
+//
+//   // words.set(splitStr[i], count)
+//   // console.log(words)
+//   let count = 1
+//
+//   words.set(splitStr[i], count)
+//
+//   // for (word of words) {
+//
+//     if (words.has(splitStr[i])) {
+//     //   // console.log(words)
+//       count += 1
+//       words.set(splitStr[i], count)
+//       console.log(count)
+//     } else {
+//       // count += 1
+//       // console.log('testing')
+//       count = 1
+//     }
+//
+//   // }
+//   // console.log(words)
+// }
+// console.log(words)
 
-  // words.set(splitStr[i], count)
-  // console.log(words)
-  let count = 1
 
-  words.set(splitStr[i], count)
+// ===========================================
+    // END solution with ES6 Map
+// ===========================================
 
-  for (word of words) {
-
-    if (words.has(splitStr[i])) {
-    //   // console.log(words)
-      count += 1
-      words.set(splitStr[i], count)
-      console.log(count)
-    } else {
-      // count += 1
-      // console.log('testing')
-      count = 1
-    }
-
-  }
-  // console.log(words)
-}
-console.log(words)
 
 // splitStr.forEach((wd, i) => {
   // console.log(`word: "${word}", index: ${i}`)
@@ -199,14 +210,6 @@ console.log(words)
 
 
 
-
-
-
-
-
-
-
-
 // BELOW IS THE WORK DONE IN THE INTERVIEW WITH KEN FROM CAPCO
 
 
@@ -220,21 +223,21 @@ console.log(words)
 // let repeatedWords = {}
 //
 //
-// for (let i = 0; i < splitStr.length; i++) {
-//     // let prevIndex = i - 1
-//     // console.log(splitStr[i])
-//
-//     if (repeatedWords.hasOwnProperty(splitStr[i])) {
-//         let count = repeatedWords[splitStr[i]]
-//         // console.log(count)
-//         count += 1
-//         repeatedWords[splitStr[i]] = count
-//     } else {
-//         // jsObj{'key' + i} = 'example ' + 1;
-//         repeatedWords[splitStr[i]] = 1
-//     }
-// }
-// console.log(repeatedWords)
+for (let i = 0; i < splitStr.length; i++) {
+    // let prevIndex = i - 1
+    // console.log(splitStr[i])
+
+    if (repeatedWords.hasOwnProperty(splitStr[i])) {
+        let count = repeatedWords[splitStr[i]]
+        // console.log(count)
+        count += 1
+        repeatedWords[splitStr[i]] = count
+    } else {
+        // jsObj{'key' + i} = 'example ' + 1;
+        repeatedWords[splitStr[i]] = 1
+    }
+}
+console.log(repeatedWords)
 
     // splitStr.map((a, b) => {
     //     console.log(string)
