@@ -74,9 +74,9 @@ let wordNum = 0
 
 // }
 
-// ===========================================
-    // START solution with ES6 Map
-// ===========================================
+/* ===========================================
+     START solution with ES6 Map
+   =========================================== */
 
 //
 // for (let i = 0; i < splitStr.length; i++) {
@@ -106,9 +106,9 @@ let wordNum = 0
 // console.log(words)
 
 
-// ===========================================
-    // END solution with ES6 Map
-// ===========================================
+/* ===========================================
+     END solution with ES6 Map
+   =========================================== */
 
 
 // splitStr.forEach((wd, i) => {
@@ -222,22 +222,36 @@ let wordNum = 0
 // }
 // let repeatedWords = {}
 //
-//
-for (let i = 0; i < splitStr.length; i++) {
-    // let prevIndex = i - 1
-    // console.log(splitStr[i])
 
-    if (repeatedWords.hasOwnProperty(splitStr[i])) {
-        let count = repeatedWords[splitStr[i]]
-        // console.log(count)
-        count += 1
-        repeatedWords[splitStr[i]] = count
-    } else {
-        // jsObj{'key' + i} = 'example ' + 1;
-        repeatedWords[splitStr[i]] = 1
-    }
-}
-console.log(repeatedWords)
+
+
+/* ===========================================
+     START solution with ES6 Map
+   =========================================== */
+
+
+// for (let i = 0; i < splitStr.length; i++) {
+//     // let prevIndex = i - 1
+//     // console.log(splitStr[i])
+//
+//     if (repeatedWords.hasOwnProperty(splitStr[i])) {
+//         let count = repeatedWords[splitStr[i]]
+//         // console.log(count)
+//         count += 1
+//         repeatedWords[splitStr[i]] = count
+//     } else {
+//         // jsObj{'key' + i} = 'example ' + 1;
+//         repeatedWords[splitStr[i]] = 1
+//     }
+// }
+// console.log(repeatedWords)
+
+/* ===========================================
+     END solution with ES6 Map
+   =========================================== */
+
+
+
 
     // splitStr.map((a, b) => {
     //     console.log(string)
