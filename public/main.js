@@ -84,7 +84,7 @@ for (let i = 0; i < splitStr.length; i++) {
     if (words.has(splitStr[i])) {
         count += 1
         // let count = words.splitStr[i]
-        // words.set(splitStr[i], count)
+        words.set(splitStr[i], count)
         // console.log(count)
         // words.set(splitStr[i], count)
 
@@ -93,9 +93,9 @@ for (let i = 0; i < splitStr.length; i++) {
       count = 1
       // console.log('else statemet thrown')
       // words.set(splitStr[i], count)
-
+      words.set(splitStr[i], count)
+      words.next()
     }
-    words.set(splitStr[i], count)
 
 }
 console.log(words)
