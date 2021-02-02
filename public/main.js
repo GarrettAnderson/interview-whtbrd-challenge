@@ -89,12 +89,12 @@ for (let i = 0; i < splitStr.length; i++) {
         // words.set(splitStr[i], count)
 
         // console.log('if statemet thrown')
+
     } else {
       count = 1
       // console.log('else statemet thrown')
       // words.set(splitStr[i], count)
       words.set(splitStr[i], count)
-      words.next()
     }
 
 }
