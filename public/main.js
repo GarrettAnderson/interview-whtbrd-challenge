@@ -89,7 +89,6 @@ for (let i = 0; i < splitStr.length; i++) {
         // words.set(splitStr[i], count)
 
         // console.log('if statemet thrown')
-
     } else {
       count = 1
       // console.log('else statemet thrown')
@@ -294,3 +293,18 @@ console.log(words)
 // })
 
 // repeatedWords.reduce(reducer)
+
+
+
+
+
+
+
+
+
+
+function sides(literals, ...expressions) {
+    let str = literals
+    let input = expressions
+    console.log(input)
+}
